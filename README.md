@@ -34,6 +34,8 @@ $ npm install
 
 ## Compile and run the project
 
+Runs on port 3000 on localhost.
+
 ```bash
 # development
 $ npm run start
@@ -43,6 +45,34 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+
+## Endpoints
+### Get all board games
+```
+localhost:3000/board-games/
+```
+
+### Get board game by title
+```
+localhost:3000/board-games/:title
+```
+
+### Add a new board game
+```
+localhost:3000/board-games/
+```
+
+Request Body
+```
+{
+  title: 'Catan',
+  players: '1-4 players',
+  playingTime: '45 mins - 1 hour',
+  competitvity: 'slightly competitive',
+  difficulty: 'medium'
+}
 ```
 
 ## Run tests
